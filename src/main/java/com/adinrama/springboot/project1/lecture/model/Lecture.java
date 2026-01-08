@@ -22,8 +22,10 @@ public class Lecture {
     @Column(unique = true, nullable = false)
     private String nidn;
 
-    private String name;
+    @Column(unique = true, nullable = false)
     private String email;
+
+    private String name;
     private String department;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
