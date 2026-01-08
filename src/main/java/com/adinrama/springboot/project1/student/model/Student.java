@@ -22,8 +22,10 @@ public class Student {
     @Column(unique = true, nullable = false)
     private String nim;
 
-    private String name;
+    @Column(unique = true, nullable = false)
     private String email;
+
+    private String name;
     private String faculty;
     private String department;
     private int semester;

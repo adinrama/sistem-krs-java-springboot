@@ -28,8 +28,8 @@ public class StudentSeeder implements CommandLineRunner {
                 new Student(
                         null,
                         "250012026",
-                        "Surya Kertanegara",
                         "surya@yahoo.id",
+                        "Surya Kertanegara",
                         "Fakultas Hukum",
                         "Ilmu Hukum",
                         6,
@@ -40,8 +40,8 @@ public class StudentSeeder implements CommandLineRunner {
                 new Student(
                         null,
                         "250022026",
-                        "Hidayatul Ulum",
                         "hidayatul@yahoo.id",
+                        "Hidayatul Ulum",
                         "Fakultas MIPA",
                         "Matematika",
                         6,
@@ -52,8 +52,8 @@ public class StudentSeeder implements CommandLineRunner {
                 new Student(
                         null,
                         "250032026",
-                        "Hendra Gunawan",
                         "hendra@yahoo.id",
+                        "Hendra Gunawan",
                         "Fakultas Teknik",
                         "Teknik Mesin",
                         8,
@@ -64,8 +64,8 @@ public class StudentSeeder implements CommandLineRunner {
                 new Student(
                         null,
                         "250042026",
-                        "Bayu Rahadian",
                         "bayu@yahoo.id",
+                        "Bayu Rahadian",
                         "Fakultas Teknik",
                         "Teknik Elektro",
                         4,
@@ -76,8 +76,8 @@ public class StudentSeeder implements CommandLineRunner {
                 new Student(
                         null,
                         "250052026",
-                        "Ajeng Sasmito",
                         "ajeng@yahoo.id",
+                        "Ajeng Sasmito",
                         "Fakultas Kedokteran",
                         "Ilmu Gizi",
                         8,
@@ -88,8 +88,8 @@ public class StudentSeeder implements CommandLineRunner {
                 new Student(
                         null,
                         "250062026",
-                        "Nisrina Ayu Pambudi",
                         "nisrina@yahoo.id",
+                        "Nisrina Ayu Pambudi",
                         "Fakultas Ilmu Komputer",
                         "Sistem Informasi",
                         4,

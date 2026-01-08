@@ -22,9 +22,25 @@ public class StudentController {
         return studentService.getAllStudents();
     }
 
-    @GetMapping("/get-student/{studentId}")
-    public GetStudentDTO getStudent(@PathVariable Long studentId) {
-        return studentService.getStudent(studentId);
+    @GetMapping("/get-student")
+    public GetStudentDTO getStudent(
+            @RequestParam(required = false) Long id,
+            @RequestParam(required = false) String nim,
+            @RequestParam(required = false) String name,
+            @RequestParam(required = false) String email
+    ) {
+        if (id != null) {
+            return studentService.getStudentById(id);
+        }
+        else if (nim != null) {
+            return studentService.getStudentByNim(nim);
+        }
+        else if (name != null) {
+            return studentService.getStudentByName(name);
+        }
+        else {
+            return studentService.getStudentByEmail(email);
+        }
     }
 
     @PostMapping("/create-student")

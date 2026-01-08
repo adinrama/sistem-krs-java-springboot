@@ -34,12 +34,40 @@ public class StudentService {
     }
 
     // ================ Get Specific Student (READ) ================
-    public GetStudentDTO getStudent(Long studentId) {
-        if (!studentRepository.existsById(studentId)) {
-            throw new RuntimeException("Student not found.");
-        }
+    public GetStudentDTO getStudentById(Long studentId) {
+        Student student = studentRepository.findById(studentId)
+                .orElseThrow(() -> new RuntimeException("Student not found."));
 
-        Student student = studentRepository.getStudentById(studentId);
+        return modelMapper.map(
+                student,
+                GetStudentDTO.class
+        );
+    }
+
+    public GetStudentDTO getStudentByNim(String nim) {
+        Student student = studentRepository.findByNim(nim)
+                .orElseThrow(() -> new RuntimeException("Student not found."));
+
+        return modelMapper.map(
+                student,
+                GetStudentDTO.class
+        );
+    }
+
+    public GetStudentDTO getStudentByName(String name) {
+        Student student = studentRepository.findByName(name)
+                .orElseThrow(() -> new RuntimeException("Student not found."));
+
+        return modelMapper.map(
+                student,
+                GetStudentDTO.class
+        );
+    }
+
+    public GetStudentDTO getStudentByEmail(String email) {
+        Student student = studentRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("Student not found."));
+
         return modelMapper.map(
                 student,
                 GetStudentDTO.class

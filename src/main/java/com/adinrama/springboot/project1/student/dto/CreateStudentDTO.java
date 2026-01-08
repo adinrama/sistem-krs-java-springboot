@@ -12,8 +12,8 @@ import lombok.NoArgsConstructor;
 public class CreateStudentDTO {
 
     private String nim;
-    private String name;
     private String email;
+    private String name;
     private String faculty;
     private String department;
     private int semester;

@@ -15,8 +15,8 @@ public class GetStudentDTO {
 
     private Long id;
     private String nim;
-    private String name;
     private String email;
+    private String name;
     private String faculty;
     private String department;
     private int semester;
