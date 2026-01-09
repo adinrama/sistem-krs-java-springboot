@@ -24,8 +24,8 @@ public class Course {
     private String courseCode;
 
     private String courseName;
-    private int credit;
-    private int semester;
+    private String semester;
+    private Integer credit;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
